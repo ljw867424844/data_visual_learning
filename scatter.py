@@ -18,7 +18,8 @@ ax.set_xlabel("Value of X",fontsize=14)
 ax.set_ylabel("Value of Y",fontsize=14)
 
 ax.tick_params(labelsize=14)
-# 在刻度标记表示的数足够大时，Matplotlib 将默认使用科学记数法。
-ax.ticklabel_format(style='plain')
+
+# 在刻度标记表示的数足够大时，Matplotlib 将默认使用科学记数法
+ax.ticklabel_format(style='plain')  # 使用常规表示法
 
 plt.show()
