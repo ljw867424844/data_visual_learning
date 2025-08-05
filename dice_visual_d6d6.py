@@ -31,5 +31,5 @@ fig = px.bar(x=poss_results,y=frequencies,title=title,labels=labels)
 fig.update_layout(xaxis_dtick=1)
 
 # 由于未知原因，fig.show()打不开网页，故用下面的方法
-fig.write_html("dice_visual_d6d6.html")
+fig.write_html("output/dice_visual_d6d6.html")
 print("图表已经写入 HTML 文件，请手动打开")

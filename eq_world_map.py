@@ -42,5 +42,5 @@ fig = px.scatter(
     color='震级',
     hover_name='位置'
 )
-fig.write_html('global_earthquakes.html')
+fig.write_html('output/global_earthquakes.html')
 print('OK!')
