@@ -9,12 +9,9 @@ for i in range(50_000):
     result = dice_1.roll() + dice_2.roll()
     results.append(result)
 
-frequencies = []
 max_result = dice_1.num_sides + dice_2.num_sides
 poss_results = range(2,max_result+1)
-for value in poss_results:
-    frequency = results.count(value)
-    frequencies.append(frequency)
+frequencies = [results.count(i) for i in poss_results]
 
 title = "Results of Rolling a D6 and a D10 50,000 Times"
 labels = {'x': 'Result', 'y': 'Frequency of Result'}
